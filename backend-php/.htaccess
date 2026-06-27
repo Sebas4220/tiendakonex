@@ -1,0 +1,17 @@
+# backend-php/.htaccess
+
+<IfModule mod_headers.c>
+    # Permitir cualquier origen (necesario para tu puerto :3000 de Nuxt)
+    Header set Access-Control-Allow-Origin "*"
+    
+    # Permitir los métodos de envío comunes
+    Header set Access-Control-Allow-Methods "POST, GET, OPTIONS, PUT, DELETE"
+    
+    # Permitir las cabeceras que usa Nuxt/$fetch
+    Header set Access-Control-Allow-Headers "Content-Type, Authorization, X-Requested-With"
+</IfModule>
+
+# Si la petición es OPTIONS (Preflight), responder 200 OK inmediatamente sin tocar PHP
+RewriteEngine On
+RewriteCond %{REQUEST_METHOD} OPTIONS
+RewriteRule ^(.*)$ - [R=200,L]
