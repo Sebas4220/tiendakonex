@@ -9,18 +9,17 @@
           <!-- Bloque de Logo y Tasa de Cambio -->
           <div class="d-flex flex-column lh-1" style="min-width: 120px">
             <span
-              class="fw-black text-warning m-0 p-0 tracking-wider text-center"
-              style="font-size: 1.6rem; font-family: 'Arial Black', sans-serif"
-            >
-              KONEX
-            </span>
-            <span
               class="text-white fw-bold text-center"
               style="font-size: 0.65rem; letter-spacing: 4px; margin-top: -3px"
             >
               TIENDA
             </span>
-
+            <span
+              class="fw-black text-warning m-0 p-0 tracking-wider text-center"
+              style="font-size: 1.6rem; font-family: 'Arial Black', sans-serif"
+            >
+              KONEX
+            </span>
             <!-- Tasa de Cambio justo debajo del Logo 
             <div class="text-center mt-2" style="white-space: nowrap">
               <small class="text-white-50" style="font-size: 0.7rem">
