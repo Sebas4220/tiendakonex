@@ -18,7 +18,7 @@
               class="text-white fw-bold text-center"
               style="font-size: 0.65rem; letter-spacing: 4px; margin-top: -3px"
             >
-              IMPORTS
+              TIENDA
             </span>
 
             <!-- Tasa de Cambio justo debajo del Logo 
@@ -33,14 +33,14 @@
           <!-- Buscador Estilizado -->
           <div
             class="input-group bg-white rounded-2 overflow-hidden border-0 flex-grow-1 mx-md-4 order-3 order-md-2"
-            style="max-width: 650px"
+            style="max-width: 800px"
           >
             <input
               type="text"
               v-model="busqueda"
               @focus="verBuscadorModal = true"
               @input="verBuscadorModal = true"
-              class="form-control bg-white border-0 ps-3 py-2 shadow-none text-dark"
+              class="form-control bg-white border-0 ps-3 py-1 shadow-none text-dark"
               placeholder="Buscar..."
               style="font-size: 0.9rem"
             />
@@ -61,12 +61,13 @@
           <div class="d-flex align-items-center gap-4 order-2 order-md-3 ms-auto ms-md-0">
             <!-- Switch de Divisas -->
             <div
-              class="btn-group btn-group-sm border border-secondary rounded-pill overflow-hidden bg-dark"
+              class="btn-group btn-group-sm border border-secondary overflow-hidden bg-dark"
               role="group"
             >
               <button
                 type="button"
-                class="btn btn-sm px-2.5 py-1 fw-bold border-0"
+                class="btn btn-sm px-2.5 py-2 fw-bold border-0"
+                style="font-size: 0.7rem"
                 :class="
                   monedaActiva === 'USD'
                     ? 'btn-warning text-black shadow-sm'
@@ -79,6 +80,7 @@
               <button
                 type="button"
                 class="btn btn-sm px-2.5 py-1 fw-bold border-0"
+                style="font-size: 0.7rem"
                 :class="
                   monedaActiva === 'VES'
                     ? 'btn-warning text-black shadow-sm'
@@ -96,15 +98,15 @@
               @click.prevent="verFavoritosModal = true"
               class="d-flex align-items-center gap-4 text-decoration-none text-white fw-bold fs-6 d-md-block d-none"
             >
-              <i class="bi bi-heart fs-4"></i>
-              <span class="ms-2">Favoritos</span>
+              <i class="bi bi-heart" style="font-size: 1.2rem"></i>
+              <span class="ms-2" style="font-size: 0.8rem">Favoritos</span>
             </a>
 
             <button
               class="btn text-white position-relative p-1 border-0 d-none d-md-block"
               @click="verCarrito = true"
             >
-              <i class="bi bi-cart3 fs-4"></i>
+              <i class="bi bi-cart3" style="font-size: 1.2rem"></i>
 
               <span
                 v-if="carritoStore.totalItems > 0"
@@ -113,7 +115,7 @@
               >
                 {{ carritoStore.totalItems }}
               </span>
-              <span class="ms-2">Carrito</span>
+              <span class="ms-2" style="font-size: 0.8rem">Carrito</span>
             </button>
           </div>
         </div>
@@ -123,7 +125,7 @@
       <div
         class="bg-white py-2 border-bottom overflow-x-auto text-nowrap scrollbar-hidden"
       >
-        <div class="container-fluid px-3">
+        <div class="container-fluid px-3" style="font-size: 0.8rem">
           <ul
             class="nav justify-content-start justify-content-md-center gap-2 gap-md-4 align-items-center flex-nowrap flex-md-wrap list-unstyled mb-0"
           >
@@ -1185,12 +1187,12 @@
       </div>
     </div>
     <div
-      class="bottom-nav bg-black border-top border-dark d-flex justify-content-around align-items-center d-md-none shadow-lg"
+      class="bottom-nav bg-white border-top border-white d-flex justify-content-around align-items-center d-md-none shadow-lg"
       style="height: 75px; border-radius: 25px 25px 0 0; z-index: 1050"
     >
       <button
         class="nav-item-btn text-decoration-none border-0 bg-transparent transition-all"
-        :class="!categoriaSeleccionada && !busqueda ? 'text-white' : 'text-white'"
+        :class="!categoriaSeleccionada && !busqueda ? 'text-dark' : 'text-dark'"
         @click="
           categoriaSeleccionada = null;
           busqueda = '';
@@ -1201,7 +1203,7 @@
         <a
           href="#"
           @click.prevent="verFavoritosModal = true"
-          class="nav-item-btn text-decoration-none border-0 bg-transparent transition-all text-decoration-none text-white"
+          class="nav-item-btn text-decoration-none border-0 bg-transparent transition-all text-decoration-none text-dark"
         >
           <i class="bi bi-heart fs-4 d-block"></i>
         </a>
@@ -1209,7 +1211,7 @@
 
       <button
         class="nav-item-btn text-decoration-none border-0 bg-transparent position-relative transition-all"
-        :class="verCarrito ? 'text-white' : 'text-white'"
+        :class="verCarrito ? 'text-dark' : 'text-dark'"
         @click="verCarrito = true"
       >
         <div class="position-relative d-inline-block">
@@ -1228,7 +1230,7 @@
       </button>
 
       <button
-        class="nav-item-btn text-decoration-none border-0 bg-transparent text-white transition-all"
+        class="nav-item-btn text-decoration-none border-0 bg-transparent text-dark transition-all"
         @click="abrirSoporte"
       >
         <i class="bi bi-whatsapp fs-4 d-block"></i>
