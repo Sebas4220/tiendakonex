@@ -324,10 +324,7 @@
     ></div>
 
     <div
-      :class="[
-        'detalle-modal bg-white rounded-t-4 shadow-lg p-3',
-        { open: verFavoritosModal },
-      ]"
+      :class="['detalle-modal bg-white rounded-t-4  p-3', { open: verFavoritosModal }]"
       style="z-index: 1081"
     >
       <div
@@ -412,7 +409,7 @@
               <div class="w-100">
                 <div
                   v-if="obtenerCantidadEnCarrito(prod.id) > 0"
-                  class="d-flex align-items-center justify-content-between border rounded-pill bg-white p-1 shadow-sm"
+                  class="d-flex align-items-center justify-content-between border rounded-pill bg-white p-1"
                 >
                   <button
                     class="btn btn-sm btn-light border-0 rounded-circle fw-bold d-flex align-items-center justify-content-center"
@@ -597,12 +594,7 @@
       @click="verDetalleModal = false"
       style="z-index: 1070"
     ></div>
-    <div
-      :class="[
-        'detalle-modal bg-white rounded-t-4 shadow-lg p-3',
-        { open: verDetalleModal },
-      ]"
-    >
+    <div :class="['detalle-modal bg-white rounded-t-4 p-3', { open: verDetalleModal }]">
       <div
         class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-3"
       >
@@ -1749,11 +1741,11 @@ const enviarAWhatsApp = () => {
 }
 .bottom-nav {
   position: fixed;
-  bottom: 20px;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 75px;
-  border-radius: 25px 25px 25px 25px;
+  border-radius: 25px 25px 0px 0px;
   z-index: 1040;
 }
 .nav-item-btn {
