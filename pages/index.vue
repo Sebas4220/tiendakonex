@@ -169,10 +169,7 @@
     ></div>
 
     <div
-      :class="[
-        'detalle-modal bg-white rounded-t-4 shadow-lg p-3',
-        { open: verCategoriaModal },
-      ]"
+      :class="['detalle-modal bg-white rounded-t-4  p-3', { open: verCategoriaModal }]"
       style="z-index: 1081"
     >
       <!-- Cabecera dinámica -->
@@ -1188,7 +1185,6 @@
 
     <div
       class="bottom-nav bg-white border-top border-white d-flex justify-content-around align-items-center d-md-none"
-      style="height: 75px; border-radius: 25px 25px 0 0; z-index: 1050"
     >
       <button
         class="nav-item-btn text-decoration-none border-0 bg-transparent transition-all"
@@ -1756,7 +1752,8 @@ const enviarAWhatsApp = () => {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 60px;
+  height: 75px;
+  border-radius: 25px 25px 0px 0px;
   z-index: 1040;
 }
 .nav-item-btn {
