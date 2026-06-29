@@ -1541,10 +1541,9 @@ const ejecutarRedireccionWhatsApp = () => {
   if (mensajePendiente.value) {
     // Si había un pedido armado en cola
     textoFinal = encodeURIComponent(mensajePendiente.value);
-    window.open(
-      `https://api.whatsapp.com/send?phone=${numeroTelefono}&text=${textoFinal}`,
-      `_blank`
-    );
+
+    // CORRECCIÓN PARA MÓVIL: Se usa wa.me y window.location.href para saltar el bloqueo de popups
+    window.location.href = `https://wa.me/${numeroTelefono}?text=${textoFinal}`;
 
     // Vaciamos el carrito tras confirmar la salida exitosa de la información
     carritoStore.vaciarCarrito();
@@ -1554,10 +1553,9 @@ const ejecutarRedireccionWhatsApp = () => {
     textoFinal = encodeURIComponent(
       "¡Hola! Me gustaría hacer una consulta sobre los productos al mayor."
     );
-    window.open(
-      `https://api.whatsapp.com/send?phone=${numeroTelefono}&text=${textoFinal}`,
-      `_blank`
-    );
+
+    // CORRECCIÓN PARA MÓVIL: Mismo ajuste para soporte general
+    window.location.href = `https://wa.me/${numeroTelefono}?text=${textoFinal}`;
   }
 
   mensajePendiente.value = null; // Reseteamos la cola de mensajes
