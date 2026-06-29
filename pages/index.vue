@@ -1177,7 +1177,7 @@
           </div>
 
           <button
-            class="btn btn-success w-100 rounded-pill py-2 fw-bold d-flex align-items-center justify-content-center gap-2 shadow"
+            class="btn btn-success mb-4 w-100 rounded-pill py-2 fw-bold d-flex align-items-center justify-content-center gap-2 shadow"
             @click="enviarAWhatsApp"
           >
             <i class="bi bi-whatsapp"></i> Enviar pedido por WhatsApp
@@ -1185,8 +1185,9 @@
         </div>
       </div>
     </div>
+
     <div
-      class="bottom-nav bg-white border-top border-white d-flex justify-content-around align-items-center d-md-none shadow-lg"
+      class="bottom-nav bg-white border-top border-white d-flex justify-content-around align-items-center d-md-none"
       style="height: 75px; border-radius: 25px 25px 0 0; z-index: 1050"
     >
       <button
