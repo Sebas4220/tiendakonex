@@ -1749,11 +1749,11 @@ const enviarAWhatsApp = () => {
 }
 .bottom-nav {
   position: fixed;
-  bottom: 0;
+  bottom: 20px;
   left: 0;
   width: 100%;
   height: 75px;
-  border-radius: 25px 25px 0px 0px;
+  border-radius: 25px 25px 25px 25px;
   z-index: 1040;
 }
 .nav-item-btn {
