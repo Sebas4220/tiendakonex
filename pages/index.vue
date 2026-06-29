@@ -1074,61 +1074,26 @@
               Método de Pago
             </h6>
             <div class="row g-2">
-              <div class="col-6">
-                <button
-                  type="button"
-                  class="btn btn-sm w-100 rounded-pill py-2 border d-flex align-items-center justify-content-center gap-1.5 fw-bold text-truncate shadow-sm transition-all"
-                  :class="
-                    form.metodoPago === 'pago_movil'
-                      ? 'btn-warning border-warning text-dark'
-                      : 'btn-light bg-white text-secondary border-light-subtle'
-                  "
-                  @click="form.metodoPago = 'pago_movil'"
-                >
-                  <i class="bi bi-phone me-1"></i> Pago Móvil
-                </button>
-              </div>
-              <div class="col-6">
-                <button
-                  type="button"
-                  class="btn btn-sm w-100 rounded-pill py-2 border d-flex align-items-center justify-content-center gap-1.5 fw-bold text-truncate shadow-sm transition-all"
-                  :class="
-                    form.metodoPago === 'zinli'
-                      ? 'btn-warning border-warning text-dark'
-                      : 'btn-light bg-white text-secondary border-light-subtle'
-                  "
-                  @click="form.metodoPago = 'zinli'"
-                >
-                  <i class="bi bi-credit-card-2-front me-1"></i> Zinli
-                </button>
-              </div>
-              <div class="col-6">
-                <button
-                  type="button"
-                  class="btn btn-sm w-100 rounded-pill py-2 border d-flex align-items-center justify-content-center gap-1.5 fw-bold text-truncate shadow-sm transition-all"
-                  :class="
-                    form.metodoPago === 'usdt'
-                      ? 'btn-warning border-warning text-dark'
-                      : 'btn-light bg-white text-secondary border-light-subtle'
-                  "
-                  @click="form.metodoPago = 'usdt'"
-                >
-                  <i class="bi bi-coin me-1"></i> USDT (Binance)
-                </button>
-              </div>
-              <div class="col-6">
-                <button
-                  type="button"
-                  class="btn btn-sm w-100 rounded-pill py-2 border d-flex align-items-center justify-content-center gap-1.5 fw-bold text-truncate shadow-sm transition-all"
-                  :class="
-                    form.metodoPago === 'efectivo'
-                      ? 'btn-warning border-warning text-dark'
-                      : 'btn-light bg-white text-secondary border-light-subtle'
-                  "
-                  @click="form.metodoPago = 'efectivo'"
-                >
-                  <i class="bi bi-cash-stack me-1"></i> Efectivo
-                </button>
+              <div class="col-12">
+                <div class="mb-3">
+                  <label for="metodoPago" class="form-label fw-bold text-dark small mb-2">
+                    Forma de Pago
+                  </label>
+                  <select
+                    id="metodoPago"
+                    v-model="form.metodoPago"
+                    class="form-select rounded-3 py-2 px-3 border-light-subtle text-dark fw-semibold shadow-sm text-secondary"
+                    :class="{ 'text-dark': form.metodoPago }"
+                  >
+                    <option value="" disabled selected hidden>
+                      Selecciona cómo vas a pagar...
+                    </option>
+                    <option value="pago_movil">📱 Pago Móvil</option>
+                    <option value="zinli">💳 Zinli</option>
+                    <option value="usdt">🟢 USDT (Binance)</option>
+                    <option value="efectivo">💵 Efectivo</option>
+                  </select>
+                </div>
               </div>
             </div>
           </div>
