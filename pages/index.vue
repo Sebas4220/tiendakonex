@@ -1127,7 +1127,7 @@
     </div>
 
     <div
-      class="bottom-nav bg-white shadow-sm d-flex justify-content-around align-items-center d-md-none border-top text-nowrap"
+      class="bottom-nav bg-white d-flex justify-content-around align-items-center d-md-none border-top border-light-subtle shadow-sm"
     >
       <button
         class="nav-item-btn text-decoration-none border-0 bg-transparent transition-all"
