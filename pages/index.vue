@@ -9,17 +9,18 @@
           <!-- Bloque de Logo y Tasa de Cambio -->
           <div class="d-flex flex-column lh-1" style="min-width: 120px">
             <span
-              class="text-white fw-bold text-center"
-              style="font-size: 0.65rem; letter-spacing: 4px; margin-top: -3px"
-            >
-              TIENDA
-            </span>
-            <span
               class="fw-black text-warning m-0 p-0 tracking-wider text-center"
               style="font-size: 1.6rem; font-family: 'Arial Black', sans-serif"
             >
               KONEX
             </span>
+            <span
+              class="text-white fw-bold text-center"
+              style="font-size: 0.65rem; letter-spacing: 4px; margin-top: -3px"
+            >
+              TIENDA
+            </span>
+
             <!-- Tasa de Cambio justo debajo del Logo 
             <div class="text-center mt-2" style="white-space: nowrap">
               <small class="text-white-50" style="font-size: 0.7rem">
@@ -169,7 +170,10 @@
     ></div>
 
     <div
-      :class="['detalle-modal bg-white rounded-t-4  p-3', { open: verCategoriaModal }]"
+      :class="[
+        'detalle-modal bg-white rounded-t-4 shadow-lg p-3',
+        { open: verCategoriaModal },
+      ]"
       style="z-index: 1081"
     >
       <!-- Cabecera dinámica -->
@@ -324,7 +328,10 @@
     ></div>
 
     <div
-      :class="['detalle-modal bg-white rounded-t-4  p-3', { open: verFavoritosModal }]"
+      :class="[
+        'detalle-modal bg-white rounded-t-4 shadow-lg p-3',
+        { open: verFavoritosModal },
+      ]"
       style="z-index: 1081"
     >
       <div
@@ -409,7 +416,7 @@
               <div class="w-100">
                 <div
                   v-if="obtenerCantidadEnCarrito(prod.id) > 0"
-                  class="d-flex align-items-center justify-content-between border rounded-pill bg-white p-1"
+                  class="d-flex align-items-center justify-content-between border rounded-pill bg-white p-1 shadow-sm"
                 >
                   <button
                     class="btn btn-sm btn-light border-0 rounded-circle fw-bold d-flex align-items-center justify-content-center"
@@ -594,7 +601,12 @@
       @click="verDetalleModal = false"
       style="z-index: 1070"
     ></div>
-    <div :class="['detalle-modal bg-white rounded-t-4 p-3', { open: verDetalleModal }]">
+    <div
+      :class="[
+        'detalle-modal bg-white rounded-t-4 shadow-lg p-3',
+        { open: verDetalleModal },
+      ]"
+    >
       <div
         class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-3"
       >
@@ -704,7 +716,7 @@
           </div>
           <button
             v-else
-            class="btn btn-warning text-dark shadow-sm btn w-100 rounded-pill py-3 mb-4 fw-bold"
+            class="btn btn-warning text-dark shadow-sm btn w-100 rounded-pill py-3 fw-bold"
             @click="carritoStore.agregarProducto(productoSeleccionado)"
           >
             Agregar al Carrito
@@ -1063,31 +1075,72 @@
 
           <!-- Sección: Método de Pago -->
           <div class="border-top pt-3 mb-3">
+            <h6
+              class="fw-bold mb-2 py-2 text-dark d-flex align-items-center gap-1.5"
+              style="font-size: 0.9rem"
+            >
+              <i
+                class="bi bi-credit-card-fill text-muted me-1"
+                style="font-size: 0.95rem"
+              ></i>
+              Método de Pago
+            </h6>
             <div class="row g-2">
-              <div class="col-12">
-                <div class="mb-1">
-                  <label for="metodoPago" class="form-label fw-bold text-dark small mb-2">
-                    <i
-                      class="bi bi-credit-card-fill text-muted me-1"
-                      style="font-size: 0.95rem"
-                    ></i>
-                    Forma de Pago
-                  </label>
-                  <select
-                    id="metodoPago"
-                    v-model="form.metodoPago"
-                    class="form-select rounded-3 py-2 px-3 border-light-subtle text-dark fw-semibold shadow-sm text-secondary"
-                    :class="{ 'text-dark': form.metodoPago }"
-                  >
-                    <option value="" disabled selected hidden>
-                      Selecciona cómo vas a pagar...
-                    </option>
-                    <option value="pago_movil">📱 Pago Móvil</option>
-                    <option value="zinli">💳 Zinli</option>
-                    <option value="usdt">🟢 USDT (Binance)</option>
-                    <option value="efectivo">💵 Efectivo</option>
-                  </select>
-                </div>
+              <div class="col-6">
+                <button
+                  type="button"
+                  class="btn btn-sm w-100 rounded-pill py-2 border d-flex align-items-center justify-content-center gap-1.5 fw-bold text-truncate shadow-sm transition-all"
+                  :class="
+                    form.metodoPago === 'pago_movil'
+                      ? 'btn-warning border-warning text-dark'
+                      : 'btn-light bg-white text-secondary border-light-subtle'
+                  "
+                  @click="form.metodoPago = 'pago_movil'"
+                >
+                  <i class="bi bi-phone me-1"></i> Pago Móvil
+                </button>
+              </div>
+              <div class="col-6">
+                <button
+                  type="button"
+                  class="btn btn-sm w-100 rounded-pill py-2 border d-flex align-items-center justify-content-center gap-1.5 fw-bold text-truncate shadow-sm transition-all"
+                  :class="
+                    form.metodoPago === 'zinli'
+                      ? 'btn-warning border-warning text-dark'
+                      : 'btn-light bg-white text-secondary border-light-subtle'
+                  "
+                  @click="form.metodoPago = 'zinli'"
+                >
+                  <i class="bi bi-credit-card-2-front me-1"></i> Zinli
+                </button>
+              </div>
+              <div class="col-6">
+                <button
+                  type="button"
+                  class="btn btn-sm w-100 rounded-pill py-2 border d-flex align-items-center justify-content-center gap-1.5 fw-bold text-truncate shadow-sm transition-all"
+                  :class="
+                    form.metodoPago === 'usdt'
+                      ? 'btn-warning border-warning text-dark'
+                      : 'btn-light bg-white text-secondary border-light-subtle'
+                  "
+                  @click="form.metodoPago = 'usdt'"
+                >
+                  <i class="bi bi-coin me-1"></i> USDT (Binance)
+                </button>
+              </div>
+              <div class="col-6">
+                <button
+                  type="button"
+                  class="btn btn-sm w-100 rounded-pill py-2 border d-flex align-items-center justify-content-center gap-1.5 fw-bold text-truncate shadow-sm transition-all"
+                  :class="
+                    form.metodoPago === 'efectivo'
+                      ? 'btn-warning border-warning text-dark'
+                      : 'btn-light bg-white text-secondary border-light-subtle'
+                  "
+                  @click="form.metodoPago = 'efectivo'"
+                >
+                  <i class="bi bi-cash-stack me-1"></i> Efectivo
+                </button>
               </div>
             </div>
           </div>
@@ -1125,7 +1178,7 @@
           </div>
 
           <button
-            class="btn btn-success mb-5 w-100 rounded-pill py-2 fw-bold d-flex align-items-center justify-content-center gap-2 shadow"
+            class="btn btn-success w-100 rounded-pill py-2 fw-bold d-flex align-items-center justify-content-center gap-2 shadow"
             @click="enviarAWhatsApp"
           >
             <i class="bi bi-whatsapp"></i> Enviar pedido por WhatsApp
@@ -1133,9 +1186,9 @@
         </div>
       </div>
     </div>
-
     <div
-      class="bottom-nav bg-white border-top border-white d-flex justify-content-around align-items-center d-md-none"
+      class="bottom-nav bg-white border-top border-white d-flex justify-content-around align-items-center d-md-none shadow-lg"
+      style="height: 75px; border-radius: 25px 25px 0 0; z-index: 1050"
     >
       <button
         class="nav-item-btn text-decoration-none border-0 bg-transparent transition-all"
@@ -1489,9 +1542,10 @@ const ejecutarRedireccionWhatsApp = () => {
   if (mensajePendiente.value) {
     // Si había un pedido armado en cola
     textoFinal = encodeURIComponent(mensajePendiente.value);
-
-    // CORRECCIÓN PARA MÓVIL: Se usa wa.me y window.location.href para saltar el bloqueo de popups
-    window.location.href = `https://wa.me/${numeroTelefono}?text=${textoFinal}`;
+    window.open(
+      `https://api.whatsapp.com/send?phone=${numeroTelefono}&text=${textoFinal}`,
+      `_blank`
+    );
 
     // Vaciamos el carrito tras confirmar la salida exitosa de la información
     carritoStore.vaciarCarrito();
@@ -1501,9 +1555,10 @@ const ejecutarRedireccionWhatsApp = () => {
     textoFinal = encodeURIComponent(
       "¡Hola! Me gustaría hacer una consulta sobre los productos al mayor."
     );
-
-    // CORRECCIÓN PARA MÓVIL: Mismo ajuste para soporte general
-    window.location.href = `https://wa.me/${numeroTelefono}?text=${textoFinal}`;
+    window.open(
+      `https://api.whatsapp.com/send?phone=${numeroTelefono}&text=${textoFinal}`,
+      `_blank`
+    );
   }
 
   mensajePendiente.value = null; // Reseteamos la cola de mensajes
@@ -1703,8 +1758,7 @@ const enviarAWhatsApp = () => {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 75px;
-  border-radius: 25px 25px 0px 0px;
+  height: 60px;
   z-index: 1040;
 }
 .nav-item-btn {
