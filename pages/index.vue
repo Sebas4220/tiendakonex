@@ -666,7 +666,7 @@
           </div>
         </div>
 
-        <div class="border-top pt-3 mb-4 bg-white">
+        <div class="border-top mb-5 bg-white">
           <div
             v-if="obtenerCantidadEnCarrito(productoSeleccionado.id) > 0"
             class="d-flex align-items-center justify-content-between border rounded-pill p-2 bg-light shadow-sm"
@@ -704,7 +704,7 @@
           </div>
           <button
             v-else
-            class="btn btn-warning text-dark shadow-sm btn w-100 rounded-pill py-3 mb-4 fw-bold"
+            class="btn btn-warning text-dark shadow-sm btn w-100 rounded-pill py-2 fw-bold"
             @click="carritoStore.agregarProducto(productoSeleccionado)"
           >
             Agregar al Carrito
