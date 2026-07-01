@@ -1127,7 +1127,7 @@
     </div>
 
     <div
-      class="bottom-nav bg-white d-flex justify-content-around align-items-center d-md-none border-top border-light-subtle shadow-sm"
+      class="bottom-nav bg-white d-flex justify-content-around align-items-center d-md-none border-top"
     >
       <button
         class="nav-item-btn text-decoration-none border-0 bg-transparent transition-all"
@@ -1682,7 +1682,7 @@ const enviarAWhatsApp = () => {
   top: 0;
   right: -100%;
   width: 100%;
-  max-width: 1080px;
+  max-width: 400px;
   height: 100vh;
   z-index: 1060;
   transition: right 0.3s ease-in-out;
