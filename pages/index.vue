@@ -1682,7 +1682,7 @@ const enviarAWhatsApp = () => {
   top: 0;
   right: -100%;
   width: 100%;
-  max-width: 400px;
+  max-width: 1080px;
   height: 100vh;
   z-index: 1060;
   transition: right 0.3s ease-in-out;
