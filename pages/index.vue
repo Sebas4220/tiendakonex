@@ -704,7 +704,7 @@
           </div>
           <button
             v-else
-            class="btn btn-warning text-dark shadow-sm btn w-100 rounded-pill py-3 fw-bold"
+            class="btn btn-warning text-dark shadow-sm btn w-100 rounded-pill py-3 mb-4 fw-bold"
             @click="carritoStore.agregarProducto(productoSeleccionado)"
           >
             Agregar al Carrito
@@ -1131,7 +1131,7 @@
           </div>
 
           <button
-            class="btn btn-success mb-4 w-100 rounded-pill py-2 fw-bold d-flex align-items-center justify-content-center gap-2 shadow"
+            class="btn btn-success mb-5 w-100 rounded-pill py-2 fw-bold d-flex align-items-center justify-content-center gap-2 shadow"
             @click="enviarAWhatsApp"
           >
             <i class="bi bi-whatsapp"></i> Enviar pedido por WhatsApp
