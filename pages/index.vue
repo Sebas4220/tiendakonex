@@ -370,7 +370,7 @@
                 verFavoritosModal = false;
                 abrirDetalle(prod);
               "
-              style="max-width: calc(100% - 175px)"
+              style="max-width: calc(100% - 230px)"
             >
               <h6 class="text-dark text-truncate mb-1 fw-bold" style="font-size: 0.85rem">
                 {{ prod.nombre }}
