@@ -144,17 +144,6 @@
                 {{ cat.nombre }}
               </a>
             </li>
-
-            <!-- Enlace Destacado Fijo -->
-            <li class="nav-item">
-              <a
-                class="nav-link text-warning fw-bold px-2 py-1"
-                href="#feliz-dia"
-                style="color: #ffc107 !important"
-              >
-                Feliz día Papá
-              </a>
-            </li>
           </ul>
         </div>
       </div>
@@ -1138,7 +1127,7 @@
     </div>
 
     <div
-      class="bottom-nav bg-white border-top border-white d-flex justify-content-around align-items-center d-md-none"
+      class="bottom-nav bg-white border-top border-white d-flex justify-content-around align-items-center d-md-none shadow-lg"
     >
       <button
         class="nav-item-btn text-decoration-none border-0 bg-transparent transition-all"
@@ -1693,7 +1682,7 @@ const enviarAWhatsApp = () => {
   top: 0;
   right: -100%;
   width: 100%;
-  max-width: 400px;
+  max-width: 1080px;
   height: 100vh;
   z-index: 1060;
   transition: right 0.3s ease-in-out;
