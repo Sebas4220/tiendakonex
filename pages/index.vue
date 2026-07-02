@@ -658,7 +658,7 @@
         <div class="mb-5 bg-white">
           <div
             v-if="obtenerCantidadEnCarrito(productoSeleccionado.id) > 0"
-            class="d-flex align-items-center justify-content-between border rounded-pill p-2 bg-light shadow-sm"
+            class="d-flex align-items-center justify-content-between border rounded-pill p-2 bg-light"
           >
             <button
               class="btn btn-white text-dark border rounded-circle fw-bold d-flex align-items-center justify-content-center"
@@ -843,7 +843,7 @@
       class="custom-modal-backdrop"
       @click="verCarrito = false"
     ></div>
-    <div :class="['carrito-sidebar bg-white p-3 shadow-lg', { open: verCarrito }]">
+    <div :class="['carrito-sidebar bg-white p-3', { open: verCarrito }]">
       <!-- CABECERA DEL SIDEBAR -->
       <div
         class="d-flex justify-content-between pb-3 align-items-center border-bottom pb-2.5 mb-3"
