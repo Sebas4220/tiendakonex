@@ -124,7 +124,7 @@
       <div
         class="bg-white py-2 border-bottom overflow-x-auto text-nowrap scrollbar-hidden"
       >
-        <div class="container-fluid px-3" style="font-size: 0.8rem">
+        <div class="container-fluid" style="font-size: 0.8rem">
           <ul
             class="nav justify-content-start justify-content-md-center gap-2 gap-md-4 align-items-center flex-nowrap flex-md-wrap list-unstyled mb-0"
           >
@@ -138,7 +138,7 @@
                   categoriaSeleccionada = cat.id;
                   verCategoriaModal = true;
                 "
-                class="nav-link fw-bold px-2 py-1"
+                class="nav-link fw-bold pe-3 ps-1"
                 :class="categoriaSeleccionada === cat.id ? 'text-success' : 'text-dark'"
               >
                 {{ cat.nombre }}
@@ -965,13 +965,6 @@
               Datos de Entrega
             </h6>
 
-            <input
-              type="text"
-              v-model="form.nombre"
-              class="form-control form-control-sm mb-2 rounded-3 shadow-sm border-light-subtle"
-              placeholder="Nombre completo"
-            />
-
             <div class="d-flex gap-2 mb-2">
               <button
                 type="button"
@@ -998,6 +991,13 @@
                 <i class="bi bi-box-seam me-1"></i> Envío por MRW
               </button>
             </div>
+
+            <input
+              type="text"
+              v-model="form.nombre"
+              class="form-control form-control-sm mb-2 rounded-3 shadow-sm border-light-subtle"
+              placeholder="Nombre completo"
+            />
 
             <!-- Inputs Delivery -->
             <div v-if="form.metodoEntrega === 'delivery'">
