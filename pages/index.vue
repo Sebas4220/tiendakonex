@@ -655,7 +655,7 @@
           </div>
         </div>
 
-        <div class="border-top mb-5 bg-white">
+        <div class="mb-5 bg-white">
           <div
             v-if="obtenerCantidadEnCarrito(productoSeleccionado.id) > 0"
             class="d-flex align-items-center justify-content-between border rounded-pill p-2 bg-light shadow-sm"
