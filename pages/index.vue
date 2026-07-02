@@ -676,7 +676,6 @@
               <span class="fw-bold text-dark d-block">
                 {{ obtenerCantidadEnCarrito(productoSeleccionado.id) }}
               </span>
-              <small class="text-muted" style="font-size: 0.65rem">En tu carrito</small>
             </div>
             <button
               class="btn btn-white text-dark border rounded-circle fw-bold d-flex align-items-center justify-content-center"
