@@ -336,7 +336,7 @@ export const PRODUCTOS: Producto[] = [
   precio_mayor: 8.00, // Precio exacto reflejado en la imagen
   minimo_mayor: 3,
   stock: 40,
-  imagen_url: "/Productos/Cargador 20W C a Lightning.png",
+  imagen_url: "/Productos/Cargador20WCaLightning.png",
   categoria_id: 6 // Categoría: Energía / Cargadores
 },
 {
