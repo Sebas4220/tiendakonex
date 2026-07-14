@@ -358,7 +358,7 @@ export const PRODUCTOS: Producto[] = [
   precio_mayor: 32.00, // Precio exacto reflejado en la imagen
   minimo_mayor: 3,
   stock: 0, // Marcado como "Agotado" en la tarjeta
-  imagen_url: "/Productos/Apple Watch Serie 11 Mini.png",
+  imagen_url: "/Productos/Apple Watch serie 11 mini.png",
   categoria_id: 2 // Categoría: Accesorios / Relojes
 },
 {
@@ -402,7 +402,7 @@ export const PRODUCTOS: Producto[] = [
   precio_mayor: 33.00, // Precio exacto reflejado en la imagen
   minimo_mayor: 3,
   stock: 12,
-  imagen_url: "/Productos/Micrófono SX35 Mini.png",
+  imagen_url: "/Productos/Micrófono sx35 mini.png",
   categoria_id: 4 // Categoría: Streaming / Audio
 },
 {
@@ -446,7 +446,7 @@ export const PRODUCTOS: Producto[] = [
   precio_mayor: 5.60, // Precio exacto reflejado en la imagen
   minimo_mayor: 3,
   stock: 50,
-  imagen_url: "/Productos/Taco 20W.png",
+  imagen_url: "/Productos/Taco 20w.png",
   categoria_id: 6 // Categoría: Energía / Cargadores
 },
 {
@@ -457,7 +457,7 @@ export const PRODUCTOS: Producto[] = [
   precio_mayor: 5.90, // Precio exacto reflejado en la imagen
   minimo_mayor: 3,
   stock: 50,
-  imagen_url: "/Productos/Taco 25W.png",
+  imagen_url: "/Productos/Taco 25w.png",
   categoria_id: 6 // Categoría: Energía / Cargadores
 },
 {
@@ -479,7 +479,7 @@ export const PRODUCTOS: Producto[] = [
   precio_mayor: 26.50, // Precio exacto reflejado en la imagen
   minimo_mayor: 3,
   stock: 0, // Marcado como "Agotado" en la tarjeta
-  imagen_url: "/Productos/Apple Watch Serie 11 Nike.png",
+  imagen_url: "/Productos/Apple Watch serie 11 nike.png",
   categoria_id: 2 // Categoría: Accesorios / Relojes
 },
 {
@@ -490,7 +490,7 @@ export const PRODUCTOS: Producto[] = [
   precio_mayor: 34.00, // Precio exacto reflejado en la imagen
   minimo_mayor: 3,
   stock: 12,
-  imagen_url: "/Productos/AirPods Max Imantados.png",
+  imagen_url: "/Productos/AirPods Max imantados.png",
   categoria_id: 3 // Categoría: Audio / Auriculares
 },
 {
@@ -534,7 +534,7 @@ precio_detal: 38.00, // Estimado al detal
 precio_mayor: 32.50, // Precio exacto reflejado en la imagen
 minimo_mayor: 3,
 stock: 15,
-imagen_url: "/Productos/Audífono Gamer X13.png",
+imagen_url: "/Productos/Audífono gamer x13.png",
 categoria_id: 3 // Categoría: Audio / Auriculares
 },
 {
@@ -545,7 +545,7 @@ precio_detal: 35.00,
 precio_mayor: 29.00,
 minimo_mayor: 3,
 stock: 0, // Marcado como "Agotado" en la tarjeta
-imagen_url: "/Productos/MagSafe Somostel.png",
+imagen_url: "/Productos/MagSafe somostel.png",
 categoria_id: 6 // Categoría: Energía / Cargadores y Power Banks
 },
 {
@@ -567,7 +567,7 @@ precio_detal: 18.00,
 precio_mayor: 15.50,
 minimo_mayor: 3,
 stock: 20,
-imagen_url: "/Productos/Buds 3 Pro.png",
+imagen_url: "/Productos/Buds 3 pro.png",
 categoria_id: 3 // Categoría: Audio / Auriculares inalámbricos
 },
 {
@@ -578,7 +578,7 @@ precio_detal: 19.00,
 precio_mayor: 15.70,
 minimo_mayor: 3,
 stock: 25,
-imagen_url: "/Productos/Teclado Keyboards.png",
+imagen_url: "/Productos/Teclado keyboards.png",
 categoria_id: 7 // Categoría: Computación / Periféricos
 },
 {
@@ -589,7 +589,7 @@ precio_detal: 60.00,
 precio_mayor: 58.00,
 minimo_mayor: 3,
 stock: 12,
-imagen_url: "/Productos/Teclado Onikuma MT706.png",
+imagen_url: "/Productos/Teclado onikuma MT706.png",
 categoria_id: 7 // Categoría: Computación / Periféricos
 },
 {
@@ -611,7 +611,7 @@ precio_detal: 49.00,
 precio_mayor: 44.00,
 minimo_mayor: 3,
 stock: 10,
-imagen_url: "/Productos/Intercomunicador Dual.png",
+imagen_url: "/Productos/Intercomunicador dual.png",
 categoria_id: 2 // Categoría: Accesorios / Gadgets de Moto
 },
 {
@@ -622,7 +622,7 @@ precio_detal: 35.00,
 precio_mayor: 28.70,
 minimo_mayor: 3,
 stock: 20,
-imagen_url: "/Productos/Radio Baofeng BF-888S.png",
+imagen_url: "/Productos/Radio baofeng Bf-888s.png",
 categoria_id: 9 // Categoría: Comunicación / Seguridad
 },
 {
@@ -633,7 +633,7 @@ precio_detal: 5.00,
 precio_mayor: 4.00,
 minimo_mayor: 3,
 stock: 0, // Marcado como "Agotado"
-imagen_url: "/Productos/Cable C a C Anaranjado.png",
+imagen_url: "/Productos/Cable c a c (anaranjado).png",
 categoria_id: 6 // Categoría: Energía / Cables
 },
 {
@@ -644,7 +644,7 @@ precio_detal: 42.00,
 precio_mayor: 38.00,
 minimo_mayor: 3,
 stock: 10,
-imagen_url: "/Productos/Teclado Onikuma G58.png",
+imagen_url: "/Productos/Teclado onikuma G58.png",
 categoria_id: 7 // Categoría: Computación / Periféricos
 },
 {
@@ -699,7 +699,7 @@ precio_detal: 5.00,
 precio_mayor: 4.00,
 minimo_mayor: 3,
 stock: 30,
-imagen_url: "/Productos/Cable USB a 12V.png",
+imagen_url: "/Productos/Cable usb a 12v.png",
 categoria_id: 6
 },
 {
@@ -721,7 +721,7 @@ precio_detal: 6.00,
 precio_mayor: 5.00,
 minimo_mayor: 3,
 stock: 40,
-imagen_url: "/Productos/Audífonos AKG Tipo C.png",
+imagen_url: "/Productos/Audífonos akg tipo c.png",
 categoria_id: 3
 },
 {
@@ -732,7 +732,7 @@ precio_detal: 30.00,
 precio_mayor: 25.80,
 minimo_mayor: 3,
 stock: 10,
-imagen_url: "/Productos/AirPods Max Normales.png",
+imagen_url: "/Productos/AirPods Max normales.png",
 categoria_id: 3
 },
 
@@ -800,7 +800,7 @@ precio_detal: 15.00,
 precio_mayor: 12.50,
 minimo_mayor: 3,
 stock: 15,
-imagen_url: "/Productos/Panel Selfie AY-82.png",
+imagen_url: "/Productos/Panel selfie AY-82.png",
 categoria_id: 4 // Categoría: Streaming / Iluminación
 },
 {
@@ -822,7 +822,7 @@ categoria_id: 4 // Categoría: Streaming / Accesorios de fotografía
   precio_mayor: 39.00, // Precio exacto reflejado en la imagen
   minimo_mayor: 3,
   stock: 12,
-  imagen_url: "/Productos/Audífono Onikuma GT811.png",
+  imagen_url: "/Productos/Audífono onikuma GT811.png",
   categoria_id: 3 // Categoría: Audio
 },
 
