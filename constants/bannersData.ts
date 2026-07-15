@@ -11,13 +11,13 @@ export const BANNERS: Banner[] = [
   {
     id: 1,
     titulo: "Controles Gaming Pro",
-    imagen: "/images/banners/banner_controles.jpg",
+    imagen: "/bannerp.png",
     link_url: "#"
   },
   {
     id: 2,
     titulo: "Descuentos en Audio",
-    imagen: "/images/banners/banner_audio.jpg",
+    imagen: "/bannerp.png",
     link_url: "#"
   }
 ];
