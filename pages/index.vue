@@ -6,23 +6,10 @@
           class="d-flex align-items-center justify-content-between w-100 gap-3 flex-wrap flex-md-nowrap"
         >
           <div class="d-flex flex-column lh-1" style="min-width: 120px">
-            <span
-              class="text-white-50 fw-bold text-center"
-              style="font-size: 0.65rem; letter-spacing: 4px; margin-top: -3px"
-            >
-              TIENDA
-            </span>
-            <span
-              class="fw-black text-warning m-0 p-0 tracking-wider text-center"
-              style="
-                font-size: 1.6rem;
-                font-family: 'Arial Black', sans-serif;
-                cursor: pointer;
-              "
-              @click="categoriaSeleccionada = null"
-            >
-              KONEX
-            </span>
+<div class="d-flex flex-column align-items-center">
+  <!-- Tu imagen aquí -->
+  <img src="../public/LOGO.png" alt="Logo Konex" style="width: 80px; height: auto;" />
+</div>
           </div>
 
           <div
