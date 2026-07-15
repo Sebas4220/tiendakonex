@@ -680,11 +680,11 @@
 <div
   v-if="datos.banners?.length"
   id="bannerCarousel"
-  class="carousel slide mb-3"
+  class="carousel slide my-3 px-3"
   data-bs-ride="carousel"
-  data-bs-interval="2000" 
+  data-bs-interval="3000" 
 >
-  <div class="carousel-inner shadow-sm "> <!-- Agregado rounded-4 para coincidir con tu diseño -->
+  <div class="carousel-inner shadow-sm rounded-4"> <!-- Agregado rounded-4 para coincidir con tu diseño -->
     <div
       v-for="(banner, index) in datos.banners"
       :key="banner.id"
@@ -699,13 +699,13 @@
     </div>
   </div>
 
-  <!-- Botones de navegación (por si el usuario quiere saltar manualmente)--> 
+  <!-- Botones de navegación (por si el usuario quiere saltar manualmente) 
   <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  </button>
+  </button>-->
 </div>
 
     <div class="container-fluid px-3 mb-5">
