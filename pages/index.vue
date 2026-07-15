@@ -6,9 +6,9 @@
           class="d-flex align-items-center justify-content-between w-100 gap-3 flex-wrap flex-md-nowrap"
         >
           <div class="d-flex flex-column lh-1" style="min-width: 120px">
-<div class="d-flex flex-column align-items-center">
+<div class="d-flex flex-column align-items-start">
   <!-- Tu imagen aquí -->
-  <img src="../public/LOGO.png" alt="Logo Konex" style="width: 80px; height: auto;" />
+  <img src="../public/LOGO.png" alt="Logo Konex" style="width: 60px; height: auto;" />
 </div>
           </div>
 
