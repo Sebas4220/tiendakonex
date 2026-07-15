@@ -1,5 +1,5 @@
 <template>
-  <div class="app-container min-vh-100 pb-5" style="background-color: #f1f1ef">
+  <div class="app-container min-vh-100 pb-5" style="background-color: #d9d9d9">
     <header class="sticky-top shadow-sm">
       <nav class="navbar bg-black text-white px-3 py-3 border-bottom border-dark">
         <div
