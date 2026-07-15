@@ -1,5 +1,5 @@
 <template>
-  <div class="app-container bg-light min-vh-100 pb-5">
+  <div class="app-container min-vh-100 pb-5" style="background-color: #f1f1ef">
     <header class="sticky-top shadow-sm">
       <nav class="navbar bg-black text-white px-3 py-3 border-bottom border-dark">
         <div
@@ -677,27 +677,36 @@
       </div>
     </div>
 
+<div
+  v-if="datos.banners?.length"
+  id="bannerCarousel"
+  class="carousel slide mb-3"
+  data-bs-ride="carousel"
+  data-bs-interval="2000" 
+>
+  <div class="carousel-inner shadow-sm rounded-4"> <!-- Agregado rounded-4 para coincidir con tu diseño -->
     <div
-      v-if="datos.banners?.length"
-      id="bannerCarousel"
-      class="carousel slide my-3 px-3"
-      data-bs-ride="carousel"
+      v-for="(banner, index) in datos.banners"
+      :key="banner.id"
+      :class="['carousel-item', { active: index === 0 }]"
     >
-      <div class="carousel-inner rounded-4 shadow-sm">
-        <div
-          v-for="(banner, index) in datos.banners"
-          :key="banner.id"
-          :class="['carousel-item', { active: index === 0 }]"
-        >
-          <img
-            :src="banner.imagen"
-            class="d-block w-100 object-fit-cover"
-            style="height: auto; width: 100%;"
-            :alt="banner.titulo"
-          />
-        </div>
-      </div>
+      <img
+        :src="banner.imagen"
+        class="d-block w-100 object-fit-cover"
+        style="height: auto; width: 100%;" 
+        :alt="banner.titulo"
+      />
     </div>
+  </div>
+
+  <!-- Botones de navegación (por si el usuario quiere saltar manualmente)--> 
+  <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
+</div>
 
     <div class="container-fluid px-3 mb-5">
       <div class="row g-3">
