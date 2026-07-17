@@ -1,5 +1,5 @@
 <template>
-  <div class="app-container min-vh-100 pb-5" style="background-color: #d9d9d9">
+  <div class="app-container min-vh-100 pb-5" style="background-color: #f4f4f4">
     <header class="sticky-top shadow-sm">
       <nav class="navbar bg-black text-white px-3 py-3 border-bottom border-dark">
         <div
@@ -684,7 +684,7 @@
   data-bs-ride="carousel"
   data-bs-interval="3000" 
 >
-  <div class="carousel-inner shadow-xs"> <!-- Agregado rounded-4 para coincidir con tu diseño -->
+  <div class="carousel-inner shadow-lg"> <!-- Agregado rounded-4 para coincidir con tu diseño -->
     <div
       v-for="(banner, index) in datos.banners"
       :key="banner.id"
