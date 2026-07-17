@@ -680,7 +680,7 @@
 <div
   v-if="datos.banners?.length"
   id="bannerCarousel"
-  class="carousel slide mb-4"
+  class="carousel slide mb-3"
   data-bs-ride="carousel"
   data-bs-interval="3000" 
 >
