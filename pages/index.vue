@@ -680,11 +680,11 @@
 <div
   v-if="datos.banners?.length"
   id="bannerCarousel"
-  class="carousel slide my-3 px-3"
+  class="carousel slide mb-4"
   data-bs-ride="carousel"
   data-bs-interval="3000" 
 >
-  <div class="carousel-inner shadow-sm rounded-4"> <!-- Agregado rounded-4 para coincidir con tu diseño -->
+  <div class="carousel-inner shadow-xs"> <!-- Agregado rounded-4 para coincidir con tu diseño -->
     <div
       v-for="(banner, index) in datos.banners"
       :key="banner.id"
