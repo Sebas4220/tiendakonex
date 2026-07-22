@@ -1256,7 +1256,7 @@ const mensajePendiente = ref(null);
 const monedaActiva = ref("USD"); 
 
 // Tasa de cambio inicial reactiva (Configurable localmente)
-const tasaCambio = ref(741.35);
+const tasaCambio = ref(757.23);
 
 const form = ref({
   nombre: "",
